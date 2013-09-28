@@ -2,6 +2,7 @@
 require_relative 'shelter'
 require_relative 'person'
 require_relative 'animal'
+require_relative 'main'
 
 # Instantiate a Shelter 
 $shelter = Shelter.new('HappiTails', '10 east 21st Street')
