@@ -5,7 +5,7 @@
 # 	- An animal should have a species.
 # 	- An animal can have multiple toys.
 class Animal
-	attr_accessor: :name, :age, :gender, :species, :toys
+	attr_accessor :name, :age, :gender, :species, :toys
 
 	def initialize(name, age, gender, species)
 		@name = 
