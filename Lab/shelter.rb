@@ -10,20 +10,28 @@ class Shelter
 		@animal_list = [] #might be better as a hash b/c not an ordered list?
 	end
 
-	#   - The shelter should be able to accept an animal (add to it's list).
+	# #   - The shelter should be able to accept an animal (add to it's list).
 	def add_animal(animal)
-
+		if animal.class == Animal
+			@animal_list << animal
+		else
+			return false
+		end
 	end
 
-	#   - The shelter should be able to accept a client (add to it's list).
-	def add_client
-
+	# #   - The shelter should be able to accept a client (add to it's list).
+	def add_client(person)
+		if person.class == Person
+			@client_list << person
+		else
+			return false
+		end
 	end
 
-	##adopt out an animal to person
-	def give_animal
+	# ##adopt out an animal to person
+	# def give_animal
 
-	end
+	# end
 
 
 

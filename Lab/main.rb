@@ -1,7 +1,9 @@
 require 'pry'
 require_relative 'data'
+require_relative 'person'
+require_relative 'animal'
+require_relative 'shelter'
 
-# here is where you can write code to try out
-# your classes
+bob = Person.new('Bob', 22, 0)
 
 binding.pry
