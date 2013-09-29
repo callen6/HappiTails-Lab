@@ -21,9 +21,9 @@ happi_tails.add_animal(spot)
 
 happi_tails.give_animal(spot)
 
-bob.get_pet(spot) # not working
+bob.get_pet("cat", spot) # not working
 
-bob.give_pet_to_shelter(spot) # decrement works on @number_of_pets, not sure about
+bob.give_pet_to_shelter(spot) # decrement works on @number_of_pets! not sure about
 								# removing from pet hash because I haven't added pet
 
 happi_tails.add_animal(spot)

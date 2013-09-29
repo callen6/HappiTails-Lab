@@ -6,13 +6,13 @@ class Person
 		@name = name
 		@age = age
 		@number_of_pets = pets #hmm...need to += and -= this...array?
-		@pet_hash = [] #:pet_name => animal (object) ###instantiated in animal.rb
+		@pet_hash = Hash.new #:pet_name => animal (object) ###instantiated in animal.rb
 	end
 
 # not working
-	def get_pet(animal)
+	def get_pet(kind, animal)
 		if animal.class == Animal
-			@pet_hash << animal
+			@pet_hash[:kind] = pet_name
 			@number_of_pets += 1
 		else
 			return false
