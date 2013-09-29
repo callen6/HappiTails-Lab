@@ -6,16 +6,22 @@ class Person
 		@name = name
 		@age = age
 		@number_of_pets = pets #hmm...need to += and -= this...array?
-		@pet_hash = {} #:pet_name => animal (object) ###instantiated in animal.rb
+		@pet_hash = [] #:pet_name => animal (object) ###instantiated in animal.rb
 	end
 
-#   - A client should be able to accept a pet and add it to their pets list
-	# def get_pet
+# not working
+	def get_pet(animal)
+		if animal.class == Animal
+			@pet_hash << animal
+			@number_of_pets += 1
+		else
+			return false
+		end
+	end
 
-	# end
-
-#   - A client should be able to give up a pet from their list 
-	# def give_pet_to_shelter
-
-	# end 
+ 
+	def give_pet_to_shelter(animal)
+		@pet_hash.delete(animal)
+		@number_of_pets -= 1
+	end 
 end

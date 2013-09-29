@@ -10,7 +10,7 @@ class Shelter
 		@animal_list = [] #might be better as a hash b/c not an ordered list?
 	end
 
-	# #   - The shelter should be able to accept an animal (add to it's list).
+
 	def add_animal(animal)
 		if animal.class == Animal
 			@animal_list << animal
@@ -19,7 +19,6 @@ class Shelter
 		end
 	end
 
-	# #   - The shelter should be able to accept a client (add to it's list).
 	def add_client(person)
 		if person.class == Person
 			@client_list << person
@@ -28,11 +27,13 @@ class Shelter
 		end
 	end
 
-	# ##adopt out an animal to person
-	# def give_animal
+	def give_animal(animal)
+		@animal_list.delete(animal)	#how do i access that array?
+	end
 
-	# end
-
-
+# not working
+	def remove_client(person)
+			@client_list.delete(person)
+	end
 
 end
