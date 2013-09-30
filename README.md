@@ -9,11 +9,11 @@
 
 ###Prerequisites:
 - Ruby
-  - Objects/Classes
-  - Initializer
-  - Accessors
-  - gets.chomp
-  - Multi-file projects ('require')
+  -# Objects/Classes
+  -# Initializer
+  -# Accessors
+  -# gets.chomp
+  -# Multi-file projects ('require')
 
 ###Objectives:
 - Practice creating objects
@@ -58,14 +58,17 @@ you can see the history
 
 #####Phase 1
 - Define classes 
+#####1hr
 
 #####Phase 2
 - Animals and Clients can be added to the shelter
+#####2 hrs
+#####1.5  hrs
 
 #####Phase 3
 - Use pry to test out the functions you
   have written and ensure that your expectations are validated
-
+#####tested all through phases 1 & 2
 #####Extra 
 - Add a text-interface that
   prompts user for input and PASSES the input information to 
@@ -75,7 +78,7 @@ you can see the history
 
 ###Post-mortem:
 - What worked?
-
+### Making this as simple as possible. Not over-thinking anything. Reading the Pragmatic Programmer's Guide to Ruby chapter 4 over with a fine-toothed-comb, then going through the Array and Hash methods section in the appdendices. Ruby koans reenforced simplicity with example after example of short, clear methods. Working on koans helped eliminate a bunch of errors (typos, syntax) that were holding me up in previous exercises. Using pry to test constantly made the process smoother, less frustrating, and stopped me wasting time going down dead-end paths. Multiple files separated out all the clutter and gave my mind room to get clarity on the little pieces each method could accomplish. Also, inspiration from Why's poignant guide to Ruby; it made me feel poetic about the code, wondering how I can convey what I need to in as condensed a form as possible.
 
 
 
