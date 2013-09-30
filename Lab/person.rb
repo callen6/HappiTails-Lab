@@ -5,15 +5,15 @@ class Person
 	def initialize(name, age, pets)
 		@name = name
 		@age = age
-		@number_of_pets = pets 
+		@number_of_pets = pets #not working
 		@pet_array = Array.new 
 	end
 
 
-	def get_pet(shelter_pet)
-		if shelter_pet.class == Animal
-			@pet_array << shelter_pet
-			@number_of_pets += 1
+	def get_pet(cute_little_buddy)
+		if cute_little_buddy.class == Animal
+			@pet_array << cute_little_buddy
+			@number_of_pets += 1 
 		else
 			return false
 		end
@@ -22,6 +22,6 @@ class Person
  
 	def give_pet_to_shelter(ex_pet_name)
 		@pet_array.delete(ex_pet_name)
-		@number_of_pets -= 1
+		@number_of_pets -= 1 unless @number_of_pets.zero?
 	end 
 end
