@@ -5,14 +5,14 @@ class Person
 	def initialize(name, age, pets)
 		@name = name
 		@age = age
-		@number_of_pets = pets #hmm...need to += and -= this...array?
-		@pet_hash = Hash.new #:pet_name => animal (object) ###instantiated in animal.rb
+		@number_of_pets = pets 
+		@pet_array = Array.new 
 	end
 
 # not working
-	def get_pet(kind, animal)
-		if animal.class == Animal
-			@pet_hash[:kind] = pet_name
+	def get_pet(shelter_pet)
+		if shelter_pet.class == Animal
+			@pet_array << shelter_pet
 			@number_of_pets += 1
 		else
 			return false
@@ -20,8 +20,8 @@ class Person
 	end
 
  
-	def give_pet_to_shelter(animal)
-		@pet_hash.delete(animal)
+	def give_pet_to_shelter(ex_pet_name)
+		@pet_array.delete(ex_pet_name)
 		@number_of_pets -= 1
 	end 
 end
