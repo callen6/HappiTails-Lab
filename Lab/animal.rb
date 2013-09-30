@@ -10,7 +10,7 @@ class Animal
 		@toys = []
 	end
 
-	def toys(toy)
+	def spoil_with_toys(toy)
 		@toys << toy
 	end
 end

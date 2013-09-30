@@ -10,7 +10,7 @@ class Shelter
 		@animal_list = [] #might be better as a hash b/c not an ordered list?
 	end
 
-
+# still working this out
 	def add_animal(animal)
 		if animal.class == Animal
 			@animal_list << animal
@@ -28,10 +28,10 @@ class Shelter
 	end
 
 	def give_animal(animal)
-		@animal_list.delete(animal)	#how do i access that array?
+		@animal_list.delete(animal)
 	end
 
-# not working
+
 	def remove_client(pet_abandoner)
 			@client_list.delete(pet_abandoner)
 	end

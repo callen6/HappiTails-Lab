@@ -4,6 +4,7 @@ require_relative 'person'
 require_relative 'animal'
 require_relative 'shelter'
 
+lassy = Animal.new('Lassy', 2, 'female', 'Dog')
 spot = Animal.new('Spot', 3, 'male', 'Dog')
 bob = Person.new('Bob', 22, 0)
 happi_tails = Shelter.new('HappiTails', '10 east 21st Street')
@@ -29,3 +30,6 @@ bob.give_pet_to_shelter(spot) # decrement works on @number_of_pets! not sure abo
 happi_tails.add_animal(spot)
 
 happi_tails.remove_client(bob) 
+
+spot.spoil_with_toys("rubber ducky")
+spot.spoil_with_toys()
