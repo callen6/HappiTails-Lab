@@ -1,11 +1,11 @@
 
 class Person
-	attr_accessor :name, :age, :pets, :pet_hash
+	attr_accessor :name, :age, :number_of_pets, :pet_array
 
 	def initialize(name, age, pets)
 		@name = name
 		@age = age
-		@number_of_pets = pets #not working
+		@number_of_pets = pets #broken
 		@pet_array = Array.new 
 	end
 

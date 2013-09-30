@@ -32,7 +32,7 @@ class Shelter
 
 
 	def remove_client(pet_abandoner)
-			@client_list.delete(pet_abandoner)
+		@client_list.delete(pet_abandoner)
 	end
 
 end

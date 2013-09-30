@@ -1,3 +1,4 @@
+
 require 'pry'
 ###require_relative 'data'
 require_relative 'person'
@@ -24,21 +25,26 @@ binding.pry
 
 # code to tested in pry
 
+# add clients to shelter
 happi_tails.add_client(bob)
 happi_tails.add_client(sue)
 happi_tails.add_client(jil)
 happi_tails.add_client(sam)
 
+# add animals to shelter
 happi_tails.add_animal(spot)
 happi_tails.add_animal(molly)
 happi_tails.add_animal(sport)
 
+# give pet to bob
 happi_tails.give_animal(spot)
 bob.get_pet(spot)
 
+# give pet to sue
 happi_tails.give_animal(sport)
 sue.get_pet(sport)
 
+# 
 happi_tails.give_animal(molly)
 sam.get_pet(molly)
 sam.get_pet(fido)
