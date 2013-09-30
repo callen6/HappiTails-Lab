@@ -22,14 +22,14 @@ happi_tails.add_animal(spot)
 
 happi_tails.give_animal(spot)
 
-bob.get_pet("cat", spot) # not working
+bob.get_pet(spot)
 
-bob.give_pet_to_shelter(spot) # decrement works on @number_of_pets! not sure about
-								# removing from pet hash because I haven't added pet
+bob.give_pet_to_shelter(spot) 
 
 happi_tails.add_animal(spot)
 
 happi_tails.remove_client(bob) 
 
 spot.spoil_with_toys("rubber ducky")
-spot.spoil_with_toys()
+spot.spoil_with_toys("chewy cow leg bone")
+lassy.spoil_with_toys("chunky bacon")

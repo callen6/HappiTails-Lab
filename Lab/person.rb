@@ -9,7 +9,7 @@ class Person
 		@pet_array = Array.new 
 	end
 
-# not working
+
 	def get_pet(shelter_pet)
 		if shelter_pet.class == Animal
 			@pet_array << shelter_pet

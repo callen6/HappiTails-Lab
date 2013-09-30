@@ -1,16 +1,15 @@
 
 class Shelter
-	attr_accessor :client_list, :animal_list #dont give writer to shelter's name, address
-											# do I want to give outside access to
-											#read and write client & animal list? hmm...
+	attr_accessor :client_list, :animal_list 
+											
 	def initialize(name, address)
 		@name = name
 		@address = address
-		@client_list = [] #should this be a hash, person attatched to animal?
-		@animal_list = [] #might be better as a hash b/c not an ordered list?
+		@client_list = [] 
+		@animal_list = [] 
 	end
 
-# still working this out
+
 	def add_animal(animal)
 		if animal.class == Animal
 			@animal_list << animal
