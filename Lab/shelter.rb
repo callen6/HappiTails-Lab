@@ -32,8 +32,8 @@ class Shelter
 	end
 
 # not working
-	def remove_client(person)
-			@client_list.delete(person)
+	def remove_client(pet_abandoner)
+			@client_list.delete(pet_abandoner)
 	end
 
 end

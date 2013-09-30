@@ -28,4 +28,4 @@ bob.give_pet_to_shelter(spot) # decrement works on @number_of_pets! not sure abo
 
 happi_tails.add_animal(spot)
 
-happi_tails.remove_client(bob) #not working
+happi_tails.remove_client(bob) 
