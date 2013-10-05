@@ -9,4 +9,9 @@ describe Person do
 	it 'should be able to adopt a pet' do
 		subject.get_pet(animal).should eq animal
 	end
+
+	it 'should be able to give a pet to the shelter' do 
+		subject.give_pet_to_shelter(animal).pet_array.should eq 0
+	end
 end
+
